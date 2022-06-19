@@ -1,0 +1,50 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>Angular Developer Test V3</span>
+    <div class="spacer"></div>
+    <span><button mat-raised-button color="warn" (click)="openDialog()">Open dialog</button></span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col"> # </th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Date of Birth</th>
+      <th scope="col">Gender</th>
+      <th scope="col">Status</th>
+      <th scope="col">Activity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of Array;let i=index">
+      <td>{{i+1}}</td>
+      <td>{{item.fields['First Name']}}</td>
+      <td>{{item.fields['Last Name']}}</td>
+      <td>{{item.fields['Date of Birth']}}</td>
+      <td>{{item.fields.Gender}}</td>
+      <td>{{item.fields.Status}}</td>
+      <td >
+        <div mat-dialog-actions [align]="'center'">
+          <button class="btn btn-primary edit" (click)="edit(item)">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button mat-raised-button color="warn" (click)="delete1(i)">Delete</button>
+        </div>
+      </td>
+    </tr>
+    <tr *ngFor="let item of newArray;let i=index">
+      <td>{{i+75}}</td>
+      <td>{{item.firstname}}</td>
+      <td>{{item.lastname}}</td>
+      <td>{{item.dob}}</td>
+      <td>{{item.gender}}</td>
+      <td>{{item.status}}</td>
+      <td >
+        <div mat-dialog-actions [align]="'center'">
+          <button class="btn btn-primary edit" (click)="edit(item)">Edit</button>&nbsp;&nbsp;&nbsp;&nbsp;
+          <button mat-raised-button color="warn" (click)="delete2(i)">Delete</button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
