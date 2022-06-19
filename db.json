@@ -1,0 +1,54 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "firstname": "Sufiya",
+      "lastname": "Nadaf",
+      "dob": "2022-06-02",
+      "gender": "female",
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "firstname": "bjk;",
+      "lastname": "jnb/jkl;l/",
+      "dob": "2022-06-01",
+      "gender": "female",
+      "status": "Active",
+      "id": 2
+    },
+    {
+      "firstname": "Sufiya sn",
+      "lastname": "Nadaf",
+      "dob": "2022-06-02",
+      "gender": "female",
+      "status": "Active",
+      "id": 3
+    },
+    {
+      "firstname": "Sufiyabegum",
+      "lastname": "nadaf",
+      "dob": "2022-06-07",
+      "gender": "female",
+      "status": "Active",
+      "id": 4
+    },
+    {
+      "firstname": "Sufiyabegum #123",
+      "lastname": "nadaf",
+      "dob": "2022-06-07",
+      "gender": "female",
+      "status": "Suspended",
+      "id": 5
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
